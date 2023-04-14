@@ -12,6 +12,32 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+button{
+  padding: 10px 20px;
+    background-color: #f02d34;
+    color: #fff;
+    border: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+   
+}
+button:hover{
+  background-color: rgb(70, 29, 29);
+
+}
+.gogle{
+  padding: 10px 20px;
+  background-color: #4285F4;
+  color: #fff;
+  border: none;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+ 
+}
 
 .App-header {
   background-color: #282c34;

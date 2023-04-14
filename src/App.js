@@ -3,9 +3,11 @@ import {app} from "./Firebase";
 import {getAuth ,onAuthStateChanged , signOut} from 'firebase/auth'
 import SignUpUser  from "./pages/SignUpUser";
 import './App.css';
+import "./index.css";
 import SignInUser from "./pages/SignInUser";
 import { useFirebase } from "./Context/firebase";
 import { useEffect, useState } from "react";
+import Firestore from "./pages/Firestore";
 
 const auth = getAuth(app);
 
@@ -49,7 +51,7 @@ function App() {
     <br></br>
     <SignInUser/>
       <br/>
-      <button onClick={() =>{
+      <button className = "gogle" onClick={() =>{
         firebase.GoogleSignIn();
       
       }}>SignUpWithGoogle</button>
@@ -57,16 +59,21 @@ function App() {
       </div>
     );
   }
-
+// mdsaif081ms@gmail.com
+// sameer
   return (
    <>
    <div className="App">
     
     {/* <button>putData</button> */}
     
-    <p>hello {user.email}</p>
+   <div className="Navbar">
+   <p>hello {user.email}</p>
     <button onClick={()=>signOut(auth)}>LogOut</button>
-   
+    
+   </div>
+    <h1>Cloud FireStore</h1>
+    <Firestore/>
     
     </div>
    </>
